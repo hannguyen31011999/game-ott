@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "score": 1,
+        "image": "./xucxac/1.png"
+    },
+    {
+        "id": 2,
+        "score": 2,
+        "image": "./xucxac/2.png"
+    },
+    {
+        "id": 3,
+        "score": 3,
+        "image": "./xucxac/3.png"
+    },
+    {
+        "id": 4,
+        "score": 4,
+        "image": "./xucxac/4.png"
+    },
+    {
+        "id": 5,
+        "score": 5,
+        "image": "./xucxac/5.png"
+    },
+    {
+        "id": 6,
+        "score": 6,
+        "image": "./xucxac/6.png"
+    }
+]

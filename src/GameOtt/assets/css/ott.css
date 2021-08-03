@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Pony';
+    src: local('Pony'), url(../font/Pony.ttf) format('ttf');
+  }
+
+.page-ott {
+    background-image: url('../img/bgGame.png');
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    padding: 40px 0;
+    font-family: Pony,'sans-serif';
+}
+
+.title-ott {
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ott-center {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.ott-list {
+    display: flex;
+}
+
+.ott-actionImage {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.player {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.player-ott {
+    text-align: center;
+}
+
+.player-ott .ott-image img {
+    width: 150px;
+}
+
+.computer-ott {
+    margin-bottom: 40px;
+}
+.computer-ott .ott-image img {
+    width: 150px;
+}
+
+.ott-info h2{
+    color: greenyellow;
+}
+
+.ott-info h2 span {
+    color: yellow;
+}
+
+.ott-btn {
+    color: #fff;
+    background-color: green;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.ott-action {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+}
+
+.ott-door {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 5px solid greenyellow;
+}
+
+.ott-door img {
+    width: 50px;
+    height: 50px;
+}
+
+.row {
+    align-items: center;
+}
+
+.ott-action {
+    position: relative;
+}
+
+.ott-overplay {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 25px;
+    background-color: #fff;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.4s;
+    opacity: 1;
+}
+
+.ott-action::before {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    width: 0; 
+    height: 0; 
+    border-right: 20px solid transparent;
+    border-top: 20px solid greenyellow;
+}
+
+.ott-active {
+    border: 2px solid red;
+}
+
+
+@media screen and(max-width:500px) {
+    .ott-title {
+        font-size: 20px;
+    }
+}

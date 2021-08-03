@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "JayKii",
+        "song": "Chiều Hôm Ấy",
+        "path": "./audio/mp4/ChieuHomAy-JayKii-5076088.mp3",
+        "image": "./audio/img/chieu-hom-ay.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Quang Đăng Trần",
+        "song": "Trò Đùa",
+        "path": "./audio/mp4/TroDua-ChauKhaiPhongQuangDangTran-6261205.mp3",
+        "image": "./audio/img/tro-dua.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Duong, W/n, Nâu",
+        "song": "3107",
+        "path": "./audio/mp4/3107.mp3",
+        "image": "./audio/img/3107.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Hoàng Dũng",
+        "song": "Nàng Thơ",
+        "path": "./audio/mp4/NangTho-HoangDung-6413381.mp3",
+        "image": "./audio/img/nang-tho.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Bozitt",
+        "song": "Những Gì Anh Nói",
+        "path": "./audio/mp4/NhungGiAnhNoiLofiVersion-BozittBozitt-6986121.mp3",
+        "image": "./audio/img/nhung-gi-anh-noi.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Bozitt",
+        "song": "Nợ Ai Đó Lời Xin Lỗi",
+        "path": "./audio/mp4/NoAiDoLoiXinLoi-Bozitt-6424600.mp3",
+        "image": "./audio/img/no-ai-do-loi-xin-loi.jpg"
+    }
+]
