@@ -3,14 +3,15 @@ import { connect } from 'react-redux';
 
 class ComputerOtt extends Component {
     render() {
+        const { styleComputer, imageRandom } = this.props;
         return (
             <div className="col-3 player">
                 <div className="computer-ott">
                     <div className="ott-action">
                         <div className="ott-door">
-                            <img src={this.props.imageRandom.image} alt="" />
+                            <img src={imageRandom.image} alt="" />
                         </div>
-                        <div className="ott-overplay" id="ott-overplay">
+                        <div className="ott-overplay" style={styleComputer}>
                             <h3>?????</h3>
                         </div>
                     </div>
@@ -25,7 +26,8 @@ class ComputerOtt extends Component {
 
 const mapStateToProps = state => {
     return {
-        imageRandom: state.gameOttReducer.imageRandom
+        imageRandom: state.gameOttReducer.imageRandom,
+        styleComputer: state.gameOttReducer.styleComputer
     }
 }
 

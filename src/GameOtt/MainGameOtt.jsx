@@ -13,7 +13,7 @@ export default class MainGameOtt extends Component {
                         <div className="col-3 ">
                         </div>
                         <div className="col-6">
-                            <h2 className="title-ott mt-5" id="title-ott">Game Ott Cho Anh Em Nào Có Tuổi Thơ Về Game Phong Thần</h2>
+                            <h2 className="title-ott mt-5" id="title-ott">Game Ott Phong Thần</h2>
                         </div>
                         <div className="col-3">
                         </div>

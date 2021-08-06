@@ -9,7 +9,10 @@ const initialState = {
     isChoose: { id: 1, image: "./ott/keo.png" },
     imageRandom: {},
     score: 0,
-    round: 0
+    round: 0,
+    styleComputer: {
+        opacity: 1
+    }
 }
 
 
@@ -17,18 +20,16 @@ const gameOttReducer = (state = initialState, action) => {
     const { type, payload } = action;
     switch (type) {
         case ottContant.choose: {
-            document.getElementById('ott-overplay').style.opacity = 1;
-            return { ...state, isChoose: payload }
+            return { ...state, isChoose: payload, styleComputer: { ...state.styleComputer.opacity, opacity: 1 } }
         }
         case ottContant.play: {
-            document.getElementById('ott-overplay').style.opacity = 0;
             const arr = [...state.image];
             const index = Math.floor(Math.random() * state.image.length);
             state.round++;
-            if ((state.isChoose.id > arr[index].id && !state.isChoose.id === 1) || (state.isChoose.id - arr[index].id === -2)) {
+            if ((state.isChoose.id > arr[index].id && state.isChoose.id !== 1) || (state.isChoose.id - arr[index].id === -2)) {
                 ++state.score;
             }
-            return { ...state, imageRandom: arr[index] };
+            return { ...state, imageRandom: arr[index], styleComputer: { ...state.styleComputer.opacity, opacity: 0 } };
         }
         default:
             return state;
